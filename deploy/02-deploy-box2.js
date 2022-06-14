@@ -12,13 +12,6 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
     args: [],
     log: true,
     waitConfirmations: network.config.blockConfirmations || 1,
-    // proxy: {
-    //   proxyContract: 'OpenZeppelinTransparentProxy',
-    //   viaAdminContract: {
-    //     name: 'BoxProxyAdmin',
-    //     artifact: 'BoxProxyAdmin',
-    //   },
-    // },
   });
 
   // Verify the deployment
